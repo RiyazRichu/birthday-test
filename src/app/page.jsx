@@ -77,7 +77,7 @@ export default function Home() {
 
     <div className="text-center mt-6">
       <a
-        href="https://wa.me/91YOURNUMBER?text=I%20just%20saw%20the%20birthday%20website%20%E2%9D%A4"
+        href="https://wa.me/919952345676?text=I%20just%20saw%20the%20birthday%20website%20%E2%9D%A4"
         className="text-pink-600 text-lg underline hover:text-pink-800"
         target="_blank"
         rel="noopener noreferrer"
