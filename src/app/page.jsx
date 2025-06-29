@@ -72,10 +72,24 @@ export default function Home() {
           animate={{ scale: 1 }}>
           <AnimatePresence mode="wait">
             {isBirthday ? (
-              <BirthdayCelebration key="celebration" />
-            ) : (
-              <Countdown key="countdown" targetDate={birthdayDate} onCountdownEnd={() => setShowForYouBtn(true)} />
-            )}
+  <>
+    <BirthdayCelebration key="celebration" />
+
+    <div className="text-center mt-6">
+      <a
+        href="https://wa.me/91YOURNUMBER?text=I%20just%20saw%20the%20birthday%20website%20%E2%9D%A4"
+        className="text-pink-600 text-lg underline hover:text-pink-800"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🎉 Tap here if you saw this!
+      </a>
+    </div>
+  </>
+) : (
+  <Countdown key="countdown" targetDate={birthdayDate} onCountdownEnd={() => setShowForYouBtn(true)} />
+)}
+
           </AnimatePresence>
         </motion.div>
       </motion.div>
